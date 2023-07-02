@@ -22,6 +22,9 @@
 .required::after {
   content: " *";
   color: red;
+} 
+p{
+  padding:  0px !important;
 }
 @keyframes moveBackground {
     0% {
