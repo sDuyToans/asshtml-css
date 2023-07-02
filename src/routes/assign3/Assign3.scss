@@ -1,0 +1,19 @@
+.assign3-container{
+    background-color: #cccccc;
+    min-height: 100vh;
+    max-height: 100%;
+    padding: 120px 250px 0 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   .select-btn{
+    ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        li{
+            list-style: none;
+        }
+       }
+   }    
+}

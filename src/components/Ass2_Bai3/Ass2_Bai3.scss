@@ -1,0 +1,89 @@
+.assign2-bai3-container {
+    background-color: #fdfdfd;
+    padding: 20px 10px;
+    display: flex;
+    gap: 20px;
+    .column-1 {
+        flex: 1;
+        .top-col1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            h4 {
+                font-size: 25px;
+                font-weight: 100;
+            }
+            a {
+                font-size: 12px;
+                text-decoration: none;
+                color: #6f9eb4;
+            }
+        }
+        .body-col1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .column-2 {
+        flex: 1;
+        .top-col2 {
+            margin-bottom: 20px;
+            h4 {
+                font-size: 25px;
+                font-weight: 100;
+                
+            }
+        }
+        .body-col2 {
+            .img-contain {
+                height: 40%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .para-contain {
+                font-size: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                p {
+                    color: grey;
+                    opacity: 0.5;
+                    line-height: 15px;
+                }
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+        }
+    }
+    .column-3 {
+        flex: 1;
+        .top-col3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            h4 {
+                font-size: 25px;
+                font-weight: 100;
+            }
+            a {
+                font-size: 12px;
+                text-decoration: none;
+                color: #6f9eb4;
+            }
+        }
+        .body-col3 {
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-around;
+            gap: 10px;
+            height: 100%;
+        }
+    }
+}

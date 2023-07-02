@@ -1,0 +1,44 @@
+.Assign2-bai2-container {
+    padding: 70px 20px 20px 20px;
+    background-color: #dceaf0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        h1 {
+            font-size: 40px;
+            font-weight: 200;
+            position: relative;
+            &::before{
+                content: "";
+                height: 3px;
+                width: 15%;
+                background-color: #5696b0;
+                position: absolute;
+                top: 120%;
+                left: 48%;
+            }
+        }
+    }
+    .body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .footer{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 80px;
+        button{
+            background-color: transparent;
+            padding: 10px 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            color: #5696b0;
+            border: 1px solid #5696b0;
+            font-weight: bold;
+        }
+    }
+}

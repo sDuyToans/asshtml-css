@@ -1,0 +1,158 @@
+.ass3-bai1-container {
+    background: url("../../assets/ass3-img1.jpeg");
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .prev {
+        position: absolute;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        i {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            &::before {
+                top: 50%;
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 50%;
+                outline: 1px solid transparent;
+                background: #dbccd0;
+                transform: translate(-50%) rotate(-135deg);
+                transform-origin: 50% 0%;
+                backface-visibility: hidden;
+            }
+            &::after {
+                top: 50%;
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 50%;
+                outline: 1px solid transparent;
+                background: #dbccd0;
+                transform: translate(-50%) rotate(-45deg);
+                transform-origin: 0 0;
+                backface-visibility: hidden;
+                transition: all 0.5s;
+            }
+        }
+    }
+    .next {
+        position: absolute;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        i {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            &::before {
+                top: 50%;
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 50%;
+                outline: 1px solid transparent;
+                background: #dbccd0;
+                transform: translate(-50%) rotate(135deg);
+                transform-origin: 50% 0%;
+                backface-visibility: hidden;
+            }
+            &::after {
+                top: 50%;
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 50%;
+                outline: 1px solid transparent;
+                background: #dbccd0;
+                transform: translate(-50%) rotate(45deg);
+                transform-origin: 100% 0;
+                backface-visibility: hidden;
+            }
+        }
+    }
+    h1 {
+        font-weight: 200;
+        font-size: 2em;
+        line-height: 1;
+        span {
+            display: block;
+            padding: 0.5em 0 0.6em 0.1em;
+            font-size: 40%;
+            line-height: 1.2;
+            opacity: 0.7;
+            a {
+                color: #fff;
+                text-decoration: none;
+                outline: none;
+                font-weight: 600;
+                display: block;
+            }
+        }
+    }
+    .corops-demos {
+        padding-top: 2em;
+        font-size: 0.6em;
+        text-align: center;
+        .demos-contain {
+            display: flex;
+            align-items: center;
+            // height: 50.91px;
+            .a-1 {
+                color: #debcc3;
+                border-color: #debcc3;
+            }
+            .a-2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                height: 100%;
+                transition: all 0.5;
+                &:hover {
+                    color: #debcc3;
+                    border-color: #debcc3;
+                }
+            }
+        }
+        .a-3 {
+            margin: 0 auto;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            transition: all 0.5;
+            &:hover {
+                color: #debcc3;
+                border-color: #debcc3;
+            }
+        }
+        a {
+            display: inline-block;
+            margin: 0.5em;
+            padding: 0.7em 1.1em;
+            outline: none;
+            border: 2px solid #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 165px;
+            font-weight: 600;
+        }
+    }
+}

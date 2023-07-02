@@ -1,0 +1,110 @@
+.assign1-bai2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    .box-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        background-color: #bebebe;
+    }
+    .box-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 150px;
+        background-color: #bebebe;
+    }
+    .hold-box3456 {
+        display: flex;
+        gap: 10px;
+        height: 30px;
+        .box-3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 25%;
+            background-color: #bebebe;
+        }
+        .box-4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 25%;
+            background-color: #bebebe;
+        }
+        .box-5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 25%;
+            background-color: #bebebe;
+        }
+        .box-6 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 25%;
+            background-color: #bebebe;
+        }
+    }
+    .hold-box789 {
+        display: flex;
+        gap: 20px;
+        height: 400px;
+        .box-7 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            background-color: #bebebe;
+        }
+        .hold-box89 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .box-8 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                height: 50%;
+                background-color: #bebebe;
+            }
+            .box-9 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                height: 50%;
+                background-color: #bebebe;
+            }
+        }
+    }
+    .box-10{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 150px;
+        background-color: #bebebe;
+    }
+}

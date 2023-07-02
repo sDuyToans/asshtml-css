@@ -1,0 +1,33 @@
+.body-row-col3-box {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted grey;
+    .contain-img{
+        height: 68px;
+        img {
+            width: 68px;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 4px;
+        }
+    }
+    .box-content-col3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .h6-1 {
+            font-size: 10px;
+        }
+        .p-1 {
+            font-size: 8px;
+            line-height: 15px;
+            color: grey;
+        }
+        .a-1 {
+            font-size: 10px;
+            text-decoration: none;
+            color: #6f9eb4;
+        }
+    }
+}

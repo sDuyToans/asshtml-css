@@ -1,0 +1,63 @@
+.home-container {
+    background: url(https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    gap: 70px;
+    .Logo {
+        .name {
+            color: #00ff00;
+            font-size: 40px;
+        }
+    }
+    .sologan {
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .ul-home {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        li {
+            list-style: none;
+            .btn-home {
+                width: 220px;
+                height: 50px;
+                border: none;
+                outline: none;
+                color: #fff;
+                background: #111;
+                cursor: pointer;
+                position: relative;
+                z-index: 0;
+                border-radius: 10px;
+                transition: background 0.5s ease;
+                &:hover{
+                    background: linear-gradient(to right, #ff0000, #00ff00);
+                    background-size: 200% auto;
+                    animation:  moveBackground 0.7s linear infinite;
+                }
+            }
+        }
+    }
+}
+@keyframes moveBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    25%{
+        background-position: 50% 100%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
