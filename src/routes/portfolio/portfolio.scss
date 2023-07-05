@@ -1,0 +1,182 @@
+.portfolio-container{
+    background-color: #cccccc;
+    min-height: 100vh;
+    max-height: 100%;
+    padding: 120px 250px 0 250px;
+    .portfolio-background{
+        background: #2f5170;
+        padding: 20px 50px;
+        width: 100%;
+        height: 100%;
+        .portfolio{
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+            padding: 10px;
+            .head{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 20px;
+                margin-bottom: 30px;
+                .download{
+                    padding: 5px;
+                    background: black;
+                }
+                .email{
+                    padding: 5px;
+                    background: black;
+                    margin-right: 20px;
+                }
+            }
+            .body{
+                display: flex;
+                gap: 20px;
+                padding: 0 40px 0 30px;
+                .left-body{
+                    width: 20%;
+                    .contain-img{
+                        width: 100%;
+                        height: 139px;
+                        background: url('../../assets/portfolio.png');
+                        background-size: 170px;
+                        border-radius: 50%;
+                        background-position: center;
+                        position: relative;
+                    }
+                }
+                .right-body{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 20px;
+                    .introduce{
+                        .p-hi-introduce{
+                            font-size: 30px;
+                            border-bottom: 1px solid #0aafad;
+                            .span-hi-introduce{
+                                font-weight: bold;
+                                color: #0aafad;
+                            }
+                        }
+                        .p-1-introduce{
+                            font-size: 22px;
+                            color: #545454;
+                        }
+                        .p-2-introduce{
+                            font-size: 10px;
+                        }
+                    }
+                    .profile{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        .title{
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+                        .fullname-contain{
+                            .title-1{
+                                font-size: 16px;
+                                font-weight: bold;
+                                border-bottom: 1px solid #dbdbdb;
+                            }
+                            .hyper-markup{
+                                font-size: 10px;
+                            }
+                        }
+                        .date-contain{
+                            .title-1{
+                                font-size: 16px;
+                                font-weight: bold;
+                                border-bottom: 1px solid #dbdbdb;
+                            }
+                            .date{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    .worked-with{
+                        .title{
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+                        .title-1{
+                            font-size: 16px;
+                            font-weight: bold;
+                            border-bottom: 1px solid #dbdbdb;
+                        }
+                        .img-workwith-contain{
+                            display: flex;
+                            padding-top: 5px;
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                    .contact{
+                        .title{
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+                        .title-1{
+                            font-size: 16px;
+                            font-weight: bold;
+                            border-bottom: 1px solid #dbdbdb;
+                        }
+                        .form{
+                            padding-top: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            input{
+                                width: 100%;
+                                padding: 5px 10px;
+                                border: 1px solid gray;
+                                border-radius: 5px;
+                            }
+                            select{
+                                width: 100%;
+                                padding: 5px 10px;
+                                border: 1px solid gray;
+                                border-radius: 5px;
+                            }
+                            textarea{
+                                width: 100%;
+                                padding: 5px 10px;
+                                border: 1px solid gray;
+                                border-radius: 5px; 
+                            }
+                            .form-double-contain{
+                                display: flex;
+                                gap: 20px;
+                                justify-content: space-between;
+                            }
+                            .check-box-contain{
+                                display: flex;
+                                justify-content: flex-start;
+                                gap: 10px;
+                                input{
+                                    width: auto;
+                                }
+                            }
+                            .button-contain{
+                                .send{
+                                    background: #000000;
+                                    color: #fff;
+                                    padding: 5px 10px;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -47,6 +47,13 @@ const Navigation = () => {
                             </button>
                         </Link>
                     </li>
+                    <li>
+                        <Link to={'/portfolio'}>
+                            <button className='btn-nav'>
+                                <span className='text-in-btn'>Portfolio</span>
+                            </button>
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <Outlet />

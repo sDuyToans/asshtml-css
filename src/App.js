@@ -6,6 +6,7 @@ import Assign1 from './routes/assign1/Assign1';
 import Assign2 from './routes/assign2/Assign2';
 import Assign3 from './routes/assign3/Assign3';
 import Assign4 from './routes/assign4/Assign4';
+import Portfolio from './routes/portfolio/portfolio';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='assign2' element={<Assign2/>}/>
         <Route path='assign3' element={<Assign3/>}/>
         <Route path='assign4' element={<Assign4/>}/>
+        <Route path='portfolio' element={<Portfolio/>}/>
       </Route>
     </Routes>
   );
