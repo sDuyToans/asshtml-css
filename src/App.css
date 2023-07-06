@@ -40,3 +40,12 @@ p{
       background-position: 50% 0%;
     }
   }
+
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }

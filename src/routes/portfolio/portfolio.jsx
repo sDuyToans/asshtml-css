@@ -16,22 +16,16 @@ const Portfolio = () => {
                         </span>
                     </div>
                     <div className="body">
-                        <div className="left-body">
-                            <div className="contain-img">
-                                <div className='image'/>
-                            </div>
-                            <div className="contain-vertical">
-                                <div className="vertical-left">
-
-                                </div>
-                                <div className="vertical-right">
-                                    
+                        <div className="introduce">
+                            <div className="introduce-img">
+                                <div className="contain-img">
+                                    <div className='image' />
                                 </div>
                             </div>
-                        </div>
-                        <div className="right-body">
-                            <div className="introduce">
-                                <p className='p-hi-introduce'>Hi, I'm <span className='span-hi-introduce'>HTML5!</span></p>
+                            <div className="introduce-text">
+                                <p className='p-hi-introduce'>
+                                    Hi, I'm <span className='span-hi-introduce'>HTML5!
+                                </span></p>
                                 <p className='p-1-introduce'>Powerfull Web Language</p>
                                 <p className='p-2-introduce'><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
                                     Facilis, veritatis. Repellendus fugiat labore nisi cupiditate
@@ -40,19 +34,51 @@ const Portfolio = () => {
                                     <b>Tenetur culpa amet eum explicabo.</b>
                                 </p>
                             </div>
-                            <div className="profile">
-                                <h1 className='title'>PROFILE</h1>
-                                <div className='fullname-contain'>
-                                    <h4 className='title-1'>FULL NAME</h4>
-                                    <p className='hyper-markup'>Hypertext Markup Language</p>
-                                </div>
-                                <div className='date-contain'>
-                                    <h4 className='title-1'>BORN</h4>
-                                    <p className='date'>28 October 2014 by World Wide Web Consortium and WHATWG</p>
-                                </div>
+                        </div>
+                        <div className="profile-text-contain">
+                            <div className="left-empty-box">
+                                <div className="left"></div>
+                                <div className="right"></div>
                             </div>
-                            <div className="worked-with">
+                            <div className="profile-text">
+                                <h1 className='title'>PROFILE</h1>
+                            </div>
+                        </div>
+                        <div className='fullname-contain'>
+                            <div className="left-empty-box">
+                                <div className="left"></div>
+                                <div className="right"></div>
+                            </div>
+                            <div className="fullname-text">
+                                <h4 className='title-1'>FULL NAME</h4>
+                                <p className='hyper-markup'>Hypertext Markup Language</p>
+                            </div>
+                        </div>
+                        <div className='date-contain'>
+                            <div className="left-empty-box">
+                                <div className="left"></div>
+                                <div className="right"></div>
+                            </div>
+                            <div className="date-text">
+                                <h4 className='title-1'>BORN</h4>
+                                <p className='date'>28 October 2014 by World Wide Web Consortium and WHATWG</p>
+                            </div>
+                        </div>
+                        <div className="portfolio-contain">
+                            <div className="left-empty-box">
+                                <div className="left"></div>
+                                <div className="right"></div>
+                            </div>
+                            <div className="portfolio-text">
                                 <h1 className='title'>PORTFÓLIO</h1>
+                            </div>
+                        </div>
+                        <div className="worked-with">
+                            <div className="left-empty-box">
+                                <div className="left"></div>
+                                <div className="right"></div>
+                            </div>
+                            <div className="worked-with-text">
                                 <h4 className='title-1'>WORK WITH</h4>
                                 <div className='img-workwith-contain'>
                                     <img src={IMG} alt="img" />
@@ -60,10 +86,24 @@ const Portfolio = () => {
                                     <img src={IMG} alt="img" />
                                 </div>
                             </div>
-                            <div className="contact">
+                        </div>
+                        <div className="contact-contain">
+                            <div className="left-empty-box">
+                                <div className="left"></div>
+                                <div className="right"></div>
+                            </div>
+                            <div className="contact-text">
                                 <h1 className='title'>CONTACT</h1>
+                            </div>
+                        </div>
+                        <div className="contact">
+                            <div className="left-empty-box">
+                                <div className="left"></div>
+                                <div className="right"></div>
+                            </div>
+                            <div className="contact-form">
                                 <h4 className='title-1'>SEND A MESSAGES</h4>
-                                <form className='form'> 
+                                <form className='form'>
                                     <div className='form-double-contain'>
                                         <input type="text" id='firstname' placeholder='First Name' />
                                         <input type="text" id='lastname' placeholder='Last Name' />
