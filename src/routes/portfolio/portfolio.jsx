@@ -18,6 +18,15 @@ const Portfolio = () => {
                     <div className="body">
                         <div className="left-body">
                             <div className="contain-img">
+                                <div className='image'/>
+                            </div>
+                            <div className="contain-vertical">
+                                <div className="vertical-left">
+
+                                </div>
+                                <div className="vertical-right">
+                                    
+                                </div>
                             </div>
                         </div>
                         <div className="right-body">

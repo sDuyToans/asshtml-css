@@ -1,14 +1,14 @@
-.portfolio-container{
+.portfolio-container {
     background-color: #cccccc;
     min-height: 100vh;
     max-height: 100%;
     padding: 120px 250px 0 250px;
-    .portfolio-background{
+    .portfolio-background {
         background: #2f5170;
         padding: 20px 50px;
         width: 100%;
         height: 100%;
-        .portfolio{
+        .portfolio {
             background: #fff;
             width: 100%;
             height: 100%;
@@ -16,157 +16,343 @@
             flex-direction: column;
             font-family: sans-serif;
             padding: 10px;
-            .head{
+            .head {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
                 gap: 20px;
                 margin-bottom: 30px;
-                .download{
+                .download {
                     padding: 5px;
                     background: black;
                 }
-                .email{
+                .email {
                     padding: 5px;
                     background: black;
                     margin-right: 20px;
                 }
             }
-            .body{
+            .body {
                 display: flex;
                 gap: 20px;
                 padding: 0 40px 0 30px;
-                .left-body{
+                width: 100%;
+                height: 100%;
+                .left-body {
                     width: 20%;
-                    .contain-img{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .contain-img {
                         width: 100%;
                         height: 139px;
-                        background: url('../../assets/portfolio.png');
-                        background-size: 170px;
+                        padding: 5px;
+                        background: #fff;
                         border-radius: 50%;
-                        background-position: center;
-                        position: relative;
+                        border: 3px solid #0aafad;
+                        .image{
+                            width: 100%;
+                            height: 100%;
+                            background: url("../../assets/portfolio.png");
+                            background-size: 170px;
+                            border-radius: 50%;
+                            background-position: center;
+                            position: relative;
+                        }
+                    }
+                    .contain-vertical {
+                        height: 804px;
+                        width: 100%;
+                        display: flex;
+                        .vertical-left {
+                            height: 100%;
+                            width: 100%;
+                            border-right: 3px solid #06aeac;
+                        }
+                        .vertical-right {
+                            height: 100%;
+                            width: 100%;
+                        }
                     }
                 }
-                .right-body{
+                .right-body {
                     width: 80%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     gap: 20px;
-                    .introduce{
-                        .p-hi-introduce{
+                    .introduce {
+                        .p-hi-introduce {
                             font-size: 30px;
                             border-bottom: 1px solid #0aafad;
-                            .span-hi-introduce{
+                            .span-hi-introduce {
                                 font-weight: bold;
                                 color: #0aafad;
                             }
                         }
-                        .p-1-introduce{
+                        .p-1-introduce {
                             font-size: 22px;
                             color: #545454;
                         }
-                        .p-2-introduce{
+                        .p-2-introduce {
                             font-size: 10px;
                         }
                     }
-                    .profile{
+                    .profile {
                         display: flex;
                         flex-direction: column;
                         gap: 15px;
-                        .title{
+                        .title {
                             font-size: 30px;
                             font-weight: bold;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                top: 50%;
+                                left: -5%;
+                                transform: translateY(-50%);
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background: #0aafad;
+                                position: absolute;
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                width: 12%;
+                                top: 50%;
+                                left: -16%;
+                                transform: translateY(-50%);
+                                border-bottom: 3px solid #0aafad;
+                            }
                         }
-                        .fullname-contain{
-                            .title-1{
+                        .fullname-contain {
+                            position: relative;
+                            &::after {
+                                content: "";
+                                top: 50%;
+                                left: -17.4%;
+                                transform: translateY(-50%);
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background: #0aafad;
+                                position: absolute;
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                left: -19.2%;
+                                transform: translateY(-50%);
+                                width: 35px;
+                                height: 35px;
+                                background: #fff;
+                                border-radius: 50%;
+                                border: 2px solid #0aafad;
+                            }
+                            .title-1 {
                                 font-size: 16px;
                                 font-weight: bold;
                                 border-bottom: 1px solid #dbdbdb;
                             }
-                            .hyper-markup{
+                            .hyper-markup {
                                 font-size: 10px;
                             }
                         }
-                        .date-contain{
-                            .title-1{
+                        .date-contain {
+                            position: relative;
+                            &::after {
+                                content: "";
+                                top: 50%;
+                                left: -17.4%;
+                                transform: translateY(-50%);
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background: #0aafad;
+                                position: absolute;
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                left: -19.2%;
+                                transform: translateY(-50%);
+                                width: 35px;
+                                height: 35px;
+                                background: #fff;
+                                border-radius: 50%;
+                                border: 2px solid #0aafad;
+                            }
+                            .title-1 {
                                 font-size: 16px;
                                 font-weight: bold;
                                 border-bottom: 1px solid #dbdbdb;
                             }
-                            .date{
+                            .date {
                                 font-size: 10px;
                             }
                         }
                     }
-                    .worked-with{
-                        .title{
+                    .worked-with {
+                        .title {
                             font-size: 30px;
                             font-weight: bold;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                top: 50%;
+                                left: -5%;
+                                transform: translateY(-50%);
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background: #0aafad;
+                                position: absolute;
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                width: 12%;
+                                top: 50%;
+                                left: -16%;
+                                transform: translateY(-50%);
+                                border-bottom: 3px solid #0aafad;
+                            }
                         }
-                        .title-1{
+                        .title-1 {
+                            position: relative;
+                            &::after {
+                                content: "";
+                                top: 140%;
+                                left: -17.4%;
+                                transform: translateY(-140%);
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background: #0aafad;
+                                position: absolute;
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                top: 150%;
+                                left: -19.2%;
+                                transform: translateY(-100%);
+                                width: 35px;
+                                height: 35px;
+                                background: #fff;
+                                border-radius: 50%;
+                                border: 2px solid #0aafad;
+                            }
                             font-size: 16px;
                             font-weight: bold;
                             border-bottom: 1px solid #dbdbdb;
                         }
-                        .img-workwith-contain{
+                        .img-workwith-contain {
                             display: flex;
                             padding-top: 5px;
-                            img{
+                            img {
                                 width: 100px;
                                 height: 100px;
                             }
                         }
                     }
-                    .contact{
-                        .title{
+                    .contact {
+                        .title {
                             font-size: 30px;
                             font-weight: bold;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                top: 50%;
+                                left: -5%;
+                                transform: translateY(-50%);
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background: #0aafad;
+                                position: absolute;
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                width: 12%;
+                                top: 50%;
+                                left: -16%;
+                                transform: translateY(-50%);
+                                border-bottom: 3px solid #0aafad;
+                            }
                         }
-                        .title-1{
+                        .title-1 {
                             font-size: 16px;
                             font-weight: bold;
                             border-bottom: 1px solid #dbdbdb;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                top: 140%;
+                                left: -17.4%;
+                                transform: translateY(-140%);
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background: #0aafad;
+                                position: absolute;
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                top: 150%;
+                                left: -19.2%;
+                                transform: translateY(-100%);
+                                width: 35px;
+                                height: 35px;
+                                background: #fff;
+                                border-radius: 50%;
+                                border: 2px solid #0aafad;
+                            }
                         }
-                        .form{
+                        .form {
                             padding-top: 10px;
                             display: flex;
                             flex-direction: column;
                             gap: 10px;
-                            input{
+                            input {
                                 width: 100%;
                                 padding: 5px 10px;
                                 border: 1px solid gray;
                                 border-radius: 5px;
                             }
-                            select{
+                            select {
                                 width: 100%;
                                 padding: 5px 10px;
                                 border: 1px solid gray;
                                 border-radius: 5px;
                             }
-                            textarea{
+                            textarea {
                                 width: 100%;
                                 padding: 5px 10px;
                                 border: 1px solid gray;
-                                border-radius: 5px; 
+                                border-radius: 5px;
                             }
-                            .form-double-contain{
+                            .form-double-contain {
                                 display: flex;
                                 gap: 20px;
                                 justify-content: space-between;
                             }
-                            .check-box-contain{
+                            .check-box-contain {
                                 display: flex;
                                 justify-content: flex-start;
                                 gap: 10px;
-                                input{
+                                input {
                                     width: auto;
                                 }
                             }
-                            .button-contain{
-                                .send{
+                            .button-contain {
+                                .send {
                                     background: #000000;
                                     color: #fff;
                                     padding: 5px 10px;
