@@ -35,7 +35,7 @@ const Ass4_Bai2 = () => {
                     </div>
                 </div>
                 <div>
-                    <input type="checkbox"  /> I have read and understood TOS
+                    <input type="checkbox"/> I have read and understood TOS
                 </div>
                 <div className="flex justify-end">
                     <button type="button" className="text-white font-thin bg-[#f38b17] px-3.5 py-2.5 rounded-[4px]">REGISTRATION</button>

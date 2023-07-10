@@ -16,7 +16,7 @@ const Navigation = () => {
     }, [])
     return (
         <>
-            <div className="nav-container">
+            {/* <div className="nav-container">
                 <NavLink to={'/'} className='logo'>
                     <img src={Logo} alt="Logo" />
                 </NavLink>
@@ -55,7 +55,7 @@ const Navigation = () => {
                         </Link>
                     </li>
                 </ul>
-            </div>
+            </div> */}
             <Outlet />
         </>
     )

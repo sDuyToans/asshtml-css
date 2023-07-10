@@ -1,0 +1,39 @@
+.menu-item-select-active {
+    cursor: pointer;
+    padding: 5px;
+    background: #b9b9b9;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    &:hover{
+        background: tomato;
+    }
+    .hinh-tron {
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        border: 1px solid #e3e3e3;
+    }
+}
+.menu-item-select {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.2s linear;
+    &:hover{
+        background: tomato;
+    }
+    .hinh-tron {
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        border: 1px solid #e3e3e3;
+    }
+    .hinh-vuong {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #e3e3e3;
+    }
+}

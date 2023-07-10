@@ -25,6 +25,13 @@ const Ass4_Bai1 = () => {
                     <label htmlFor="comment" className="required text-gray-500">Comment</label>
                     <textarea id="comment" className="outline outline-gray-500" />
                 </div>
+                <div>
+                    <select name="" id="" className="w-full">
+                        <option value="1">1</option>
+                        <option value="2">3</option>
+                        <option value="3" selected>3</option>
+                    </select>
+                </div>
                 <div className="flex justify-start">
                     <button type="button" className="px-3 py-2 w-1/6 text-sm font-thin bg-[#4884dc] text-white">Post Comment</button> 
                 </div>
